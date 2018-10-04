@@ -1,4 +1,4 @@
-const { createCanvas, registerFont } = require('canvas-prebuilt')
+const { createCanvas, registerFont } = require('canvas')
 registerFont('futura_bold_italic.otf', {family: 'Futura Bold Italic'});
 
 const marginHorizontal = 0.2;
