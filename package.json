@@ -1,19 +1,35 @@
 {
-  "name": "build-a-bogo",
+  "name": "Bogo",
   "version": "1.0.0",
   "description": "",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --config ./webpack.config.js --mode development",
+    "build": "webpack --mode production",
     "start": "node server/index.js"
   },
   "author": "",
   "license": "UNLICENSED",
   "dependencies": {
     "canvas": "v2.0.0-alpha.14",
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "lodash": "^4.17.11",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
   },
   "engines": {
     "node": "10.11.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-flow": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.4",
+    "flow-bin": "^0.82.0",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.9"
   }
 }
