@@ -5,9 +5,9 @@
 * `npm install`
 
 ## Run locally
-* `npm run dev` to start webpack process
 * `npm start` to run API server
+* `npm run dev` to start webpack process
 
 ## Deploy
-* `npm run build` to build client
 * `npm start` to run API server
+* `npm run build` to build client

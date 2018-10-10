@@ -8,7 +8,7 @@ type Props = {
 
 const App: Props => React$Element<any>
 = ({ title }) => (
-  <div>{title}</div>
+  <div class='stupidclass'>{title}</div>
 )
 
 export default App;
