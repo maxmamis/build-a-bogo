@@ -25,7 +25,7 @@ module.exports = {
     new webpack.DefinePlugin({
       "API_URL": JSON.stringify(
         process.env.NODE_ENV !== 'production'
-          ? 'https://localhost:8000'
+          ? 'http://localhost:8000'
           : 'https://build-a-bogo.herokuapp.com')
     }),
   ],
