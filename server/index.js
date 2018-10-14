@@ -2,7 +2,7 @@ const Bogo = require('./Bogo');
 const express = require('express')
 const app = express()
 
-app.get('/', (req, res) => {
+app.get('/bogo.png', (req, res) => {
   const { bgcolor, textcolor, text } = req.query;
   const bogo = new Bogo(text, bgcolor, textcolor);
   const stream = bogo.generate(100);
