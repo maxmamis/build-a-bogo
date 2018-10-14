@@ -16,6 +16,8 @@ app.get('/bogo.png', (req, res) => {
   });
 });
 
+app.use(express.static('dist'));
+
 let port = process.env.PORT;
 if (port == null || port == "") {
   port = 8000;

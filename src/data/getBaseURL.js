@@ -1,4 +1,4 @@
 // @flow
 
-const getBaseURL = () => 'http://localhost:8000';
+const getBaseURL = () => API_URL;
 export default getBaseURL;

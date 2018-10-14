@@ -1,3 +1,4 @@
+const webpack = require('webpack');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
@@ -20,7 +21,13 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "[name].css",
       chunkFilename: "[id].css"
-    })
+    }),
+    new webpack.DefinePlugin({
+      "API_URL": JSON.stringify(
+        process.env.NODE_ENV !== 'production'
+          ? 'http://localhost:8000'
+          : 'http://build-a-bogo.herokuapp.com')
+    }),
   ],
   resolve: {
     extensions: ['*', '.js', '.jsx']
